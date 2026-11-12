@@ -1,0 +1,29 @@
+primary:
+  name: HAM10000
+  root: data/raw/HAM10000
+  metadata: HAM10000_metadata.csv
+  image_dirs:
+    - HAM10000_images_part_1
+    - HAM10000_images_part_2
+  image_id_column: image_id
+  label_column: dx
+  group_column: lesion_id
+  classes: [akiec, bcc, bkl, df, mel, nv, vasc]
+  splits_dir: data/splits
+
+# External evaluation is optional. The conservative mapping uses only classes
+# with clear counterparts in HAM10000; all other PAD-UFES-20 labels are excluded.
+external:
+  name: PAD-UFES-20
+  root: data/raw/PAD_UFES_20/PAD-UFES-20
+  metadata: metadata.csv
+  image_dirs:
+    - images
+  image_id_column: img_id
+  label_column: diagnostic
+  group_column: patient_id
+  classes: [bcc, mel, nv]
+  label_map:
+    BCC: bcc
+    MEL: mel
+    NEV: nv

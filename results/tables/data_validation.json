@@ -1,0 +1,47 @@
+{
+  "datasets": {
+    "primary": {
+      "dataset": "HAM10000",
+      "metadata_rows": 10015,
+      "usable_rows": 10015,
+      "unmapped_rows": 0,
+      "unmapped_label_counts": {},
+      "indexed_images": 10015,
+      "class_counts": {
+        "akiec": 327,
+        "bcc": 514,
+        "bkl": 1099,
+        "df": 115,
+        "mel": 1113,
+        "nv": 6705,
+        "vasc": 142
+      },
+      "group_count": 7470,
+      "image_root": ".\\data\\raw\\HAM10000"
+    },
+    "external": {
+      "dataset": "PAD-UFES-20",
+      "metadata_rows": 2298,
+      "usable_rows": 1141,
+      "unmapped_rows": 1157,
+      "unmapped_label_counts": {
+        "ACK": 730,
+        "SCC": 192,
+        "SEK": 235
+      },
+      "indexed_images": 2298,
+      "class_counts": {
+        "bcc": 845,
+        "mel": 52,
+        "nv": 244
+      },
+      "group_count": 720,
+      "image_root": ".\\data\\raw\\PAD_UFES_20\\PAD-UFES-20"
+    }
+  },
+  "exact_overlap_check": {
+    "method": "exact SHA-256 match",
+    "count": 0,
+    "matches": []
+  }
+}

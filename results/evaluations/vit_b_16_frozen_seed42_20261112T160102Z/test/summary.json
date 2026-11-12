@@ -1,0 +1,189 @@
+{
+  "run_id": "vit_b_16_frozen_seed42_20261112T160102Z",
+  "model": "vit_b_16",
+  "strategy": "frozen",
+  "pretrained_weights": "IMAGENET1K_V1",
+  "pretraining_dataset": "ImageNet-1K",
+  "dataset": "HAM10000",
+  "split": "test",
+  "seed": 42,
+  "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch_version": "2.11.0+cu128",
+  "torchvision_version": "0.26.0+cu128",
+  "cuda_version": "12.8",
+  "precision": "amp_fp16",
+  "batch_size": 4,
+  "input_size": 224,
+  "total_parameters": 85804039,
+  "trainable_parameters": 5383,
+  "checkpoint_size_bytes": 343277007,
+  "training_seconds": 979.5439635001239,
+  "training_peak_gpu_memory_mb": 370.56494140625,
+  "inference_peak_gpu_memory_mb": 361.17138671875,
+  "peak_process_rss_mb": 1610.0546875,
+  "warmup_batches": 5,
+  "timed_batches": 353,
+  "timed_images": 1411,
+  "inference_seconds": 11.220248900877777,
+  "data_loading_wait_seconds": 20.97713020077208,
+  "latency_ms_per_image": 7.951983629254272,
+  "throughput_images_per_second": 125.75478605377597,
+  "evaluation_wall_seconds": 33.12753680004971,
+  "accuracy": 0.7938504542278128,
+  "macro_f1": 0.6049648420212593,
+  "balanced_accuracy": 0.6039795858834776,
+  "macro_specificity_ovr": 0.9511203893982652,
+  "macro_roc_auc_ovr": 0.944519618175419,
+  "roc_auc_classes_included": [
+    "akiec",
+    "bcc",
+    "bkl",
+    "df",
+    "mel",
+    "nv",
+    "vasc"
+  ],
+  "class_metrics": [
+    {
+      "class": "akiec",
+      "support": 46,
+      "precision": 0.323943661971831,
+      "recall_sensitivity": 0.5,
+      "f1": 0.39316239316239315,
+      "specificity_ovr": 0.9653429602888086,
+      "roc_auc_ovr": 0.9456914142206874
+    },
+    {
+      "class": "bcc",
+      "support": 74,
+      "precision": 0.6585365853658537,
+      "recall_sensitivity": 0.7297297297297297,
+      "f1": 0.6923076923076923,
+      "specificity_ovr": 0.9793662490788504,
+      "roc_auc_ovr": 0.980033460136629
+    },
+    {
+      "class": "bkl",
+      "support": 157,
+      "precision": 0.6524822695035462,
+      "recall_sensitivity": 0.5859872611464968,
+      "f1": 0.6174496644295302,
+      "specificity_ovr": 0.9615384615384616,
+      "roc_auc_ovr": 0.9219020288174063
+    },
+    {
+      "class": "df",
+      "support": 17,
+      "precision": 0.6666666666666666,
+      "recall_sensitivity": 0.35294117647058826,
+      "f1": 0.46153846153846156,
+      "specificity_ovr": 0.9978783592644979,
+      "roc_auc_ovr": 0.9532407022214826
+    },
+    {
+      "class": "mel",
+      "support": 159,
+      "precision": 0.5228758169934641,
+      "recall_sensitivity": 0.5031446540880503,
+      "f1": 0.5128205128205129,
+      "specificity_ovr": 0.9426100628930818,
+      "roc_auc_ovr": 0.8727947865986313
+    },
+    {
+      "class": "nv",
+      "support": 958,
+      "precision": 0.9089005235602095,
+      "recall_sensitivity": 0.906054279749478,
+      "f1": 0.9074751698902248,
+      "specificity_ovr": 0.8160676532769556,
+      "roc_auc_ovr": 0.9439635957575464
+    },
+    {
+      "class": "vasc",
+      "support": 20,
+      "precision": 0.65,
+      "recall_sensitivity": 0.65,
+      "f1": 0.65,
+      "specificity_ovr": 0.9950389794472005,
+      "roc_auc_ovr": 0.9940113394755493
+    }
+  ],
+  "confusion_matrix": [
+    [
+      23,
+      7,
+      8,
+      2,
+      3,
+      3,
+      0
+    ],
+    [
+      7,
+      54,
+      2,
+      1,
+      0,
+      8,
+      2
+    ],
+    [
+      22,
+      7,
+      92,
+      0,
+      18,
+      18,
+      0
+    ],
+    [
+      3,
+      4,
+      1,
+      6,
+      0,
+      3,
+      0
+    ],
+    [
+      11,
+      4,
+      12,
+      0,
+      80,
+      50,
+      2
+    ],
+    [
+      5,
+      4,
+      26,
+      0,
+      52,
+      868,
+      3
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      0,
+      5,
+      13
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "akiec",
+    "bcc",
+    "bkl",
+    "df",
+    "mel",
+    "nv",
+    "vasc"
+  ],
+  "evaluated_examples": 1431,
+  "external_dataset_audit": null,
+  "checkpoint": ".\\results\\runs\\vit_b_16_frozen_seed42_20261112T160102Z\\checkpoints\\best.pt",
+  "evaluated_at_utc": "2026-11-12T17:26:51.038444+00:00"
+}

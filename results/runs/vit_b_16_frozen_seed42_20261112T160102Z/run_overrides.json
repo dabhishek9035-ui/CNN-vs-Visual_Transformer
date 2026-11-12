@@ -1,0 +1,6 @@
+{
+  "model": "vit_b_16",
+  "strategy": "frozen",
+  "seed": 42,
+  "deterministic_cudnn": false
+}

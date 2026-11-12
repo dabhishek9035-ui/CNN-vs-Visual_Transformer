@@ -1,0 +1,32 @@
+seed: 42
+device: auto
+input_size: 224
+batch_size: 4
+num_workers: 2
+deterministic: false
+epochs: 20
+early_stopping_patience: 4
+amp: true
+class_weighted_loss: true
+inference_warmup_batches: 5
+
+model_weights:
+  resnet50: IMAGENET1K_V2
+  vit_b_16: IMAGENET1K_V1
+
+augmentation:
+  horizontal_flip: true
+  vertical_flip: true
+  rotation_degrees: 15
+
+optimizer:
+  scratch_learning_rate: 0.0003
+  frozen_head_learning_rate: 0.001
+  finetune_backbone_learning_rate: 0.00001
+  finetune_head_learning_rate: 0.0001
+  weight_decay: 0.0001
+  scheduler_patience: 2
+
+splitting:
+  test_folds: 7
+  validation_folds: 6

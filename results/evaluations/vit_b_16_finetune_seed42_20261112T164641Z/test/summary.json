@@ -1,0 +1,189 @@
+{
+  "run_id": "vit_b_16_finetune_seed42_20261112T164641Z",
+  "model": "vit_b_16",
+  "strategy": "finetune",
+  "pretrained_weights": "IMAGENET1K_V1",
+  "pretraining_dataset": "ImageNet-1K",
+  "dataset": "HAM10000",
+  "split": "test",
+  "seed": 42,
+  "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch_version": "2.11.0+cu128",
+  "torchvision_version": "0.26.0+cu128",
+  "cuda_version": "12.8",
+  "precision": "amp_fp16",
+  "batch_size": 4,
+  "input_size": 224,
+  "total_parameters": 85804039,
+  "trainable_parameters": 85804039,
+  "checkpoint_size_bytes": 343277007,
+  "training_seconds": 1962.7863333000569,
+  "training_peak_gpu_memory_mb": 1661.177734375,
+  "inference_peak_gpu_memory_mb": 361.17138671875,
+  "peak_process_rss_mb": 1602.30078125,
+  "warmup_batches": 5,
+  "timed_batches": 353,
+  "timed_images": 1411,
+  "inference_seconds": 11.499539500509854,
+  "data_loading_wait_seconds": 22.688350999786053,
+  "latency_ms_per_image": 8.14992168710833,
+  "throughput_images_per_second": 122.70056552590133,
+  "evaluation_wall_seconds": 35.34176689997548,
+  "accuracy": 0.8378756114605171,
+  "macro_f1": 0.7049487416450003,
+  "balanced_accuracy": 0.6652028203993025,
+  "macro_specificity_ovr": 0.9593290132157334,
+  "macro_roc_auc_ovr": 0.9601324134232812,
+  "roc_auc_classes_included": [
+    "akiec",
+    "bcc",
+    "bkl",
+    "df",
+    "mel",
+    "nv",
+    "vasc"
+  ],
+  "class_metrics": [
+    {
+      "class": "akiec",
+      "support": 46,
+      "precision": 0.5238095238095238,
+      "recall_sensitivity": 0.4782608695652174,
+      "f1": 0.5,
+      "specificity_ovr": 0.9855595667870036,
+      "roc_auc_ovr": 0.9551561764244232
+    },
+    {
+      "class": "bcc",
+      "support": 74,
+      "precision": 0.6666666666666666,
+      "recall_sensitivity": 0.7027027027027027,
+      "f1": 0.6842105263157895,
+      "specificity_ovr": 0.9808400884303611,
+      "roc_auc_ovr": 0.9861578601445956
+    },
+    {
+      "class": "bkl",
+      "support": 157,
+      "precision": 0.7518248175182481,
+      "recall_sensitivity": 0.6560509554140127,
+      "f1": 0.7006802721088435,
+      "specificity_ovr": 0.9733124018838305,
+      "roc_auc_ovr": 0.9483146516813487
+    },
+    {
+      "class": "df",
+      "support": 17,
+      "precision": 1.0,
+      "recall_sensitivity": 0.47058823529411764,
+      "f1": 0.6399999999999999,
+      "specificity_ovr": 1.0,
+      "roc_auc_ovr": 0.9464181712288875
+    },
+    {
+      "class": "mel",
+      "support": 159,
+      "precision": 0.5921787709497207,
+      "recall_sensitivity": 0.6666666666666666,
+      "f1": 0.6272189349112427,
+      "specificity_ovr": 0.9426100628930818,
+      "roc_auc_ovr": 0.9269115145761639
+    },
+    {
+      "class": "nv",
+      "support": 958,
+      "precision": 0.918724279835391,
+      "recall_sensitivity": 0.9321503131524008,
+      "f1": 0.9253886010362693,
+      "specificity_ovr": 0.8329809725158562,
+      "roc_auc_ovr": 0.9628586687381657
+    },
+    {
+      "class": "vasc",
+      "support": 20,
+      "precision": 1.0,
+      "recall_sensitivity": 0.75,
+      "f1": 0.8571428571428571,
+      "specificity_ovr": 1.0,
+      "roc_auc_ovr": 0.9951098511693834
+    }
+  ],
+  "confusion_matrix": [
+    [
+      22,
+      5,
+      10,
+      0,
+      6,
+      3,
+      0
+    ],
+    [
+      4,
+      52,
+      7,
+      0,
+      0,
+      11,
+      0
+    ],
+    [
+      9,
+      6,
+      103,
+      0,
+      19,
+      20,
+      0
+    ],
+    [
+      0,
+      6,
+      0,
+      8,
+      0,
+      3,
+      0
+    ],
+    [
+      6,
+      2,
+      6,
+      0,
+      106,
+      39,
+      0
+    ],
+    [
+      1,
+      5,
+      11,
+      0,
+      48,
+      893,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      0,
+      3,
+      15
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "akiec",
+    "bcc",
+    "bkl",
+    "df",
+    "mel",
+    "nv",
+    "vasc"
+  ],
+  "evaluated_examples": 1431,
+  "external_dataset_audit": null,
+  "checkpoint": ".\\results\\runs\\vit_b_16_finetune_seed42_20261112T164641Z\\checkpoints\\best.pt",
+  "evaluated_at_utc": "2026-11-12T17:28:34.660811+00:00"
+}

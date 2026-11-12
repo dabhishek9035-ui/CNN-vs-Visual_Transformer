@@ -1,0 +1,167 @@
+{
+  "run_id": "resnet50_frozen_seed42_20261112T153434Z",
+  "model": "resnet50",
+  "strategy": "frozen",
+  "pretrained_weights": "IMAGENET1K_V2",
+  "pretraining_dataset": "ImageNet-1K",
+  "dataset": "PAD-UFES-20",
+  "split": "external",
+  "seed": 42,
+  "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "torch_version": "2.11.0+cu128",
+  "torchvision_version": "0.26.0+cu128",
+  "cuda_version": "12.8",
+  "precision": "amp_fp16",
+  "batch_size": 4,
+  "input_size": 224,
+  "total_parameters": 23522375,
+  "trainable_parameters": 14343,
+  "checkpoint_size_bytes": 94407679,
+  "training_seconds": 1179.464698100055,
+  "training_peak_gpu_memory_mb": 1198.1044921875,
+  "inference_peak_gpu_memory_mb": 123.28076171875,
+  "peak_process_rss_mb": 1701.125,
+  "warmup_batches": 5,
+  "timed_batches": 281,
+  "timed_images": 1121,
+  "inference_seconds": 6.415209299826529,
+  "data_loading_wait_seconds": 38.665344000270125,
+  "latency_ms_per_image": 5.722755842842577,
+  "throughput_images_per_second": 174.74098624191615,
+  "evaluation_wall_seconds": 46.19475989998318,
+  "accuracy": 0.4224364592462752,
+  "macro_f1": 0.40692861845759404,
+  "balanced_accuracy": 0.4409237882756168,
+  "macro_specificity_ovr": 0.8747979232168955,
+  "macro_roc_auc_ovr": 0.7658753860532391,
+  "roc_auc_classes_included": [
+    "bcc",
+    "mel",
+    "nv"
+  ],
+  "class_metrics": [
+    {
+      "class": "bcc",
+      "support": 845,
+      "precision": 0.9525423728813559,
+      "recall_sensitivity": 0.33254437869822484,
+      "f1": 0.4929824561403509,
+      "specificity_ovr": 0.9527027027027027,
+      "roc_auc_ovr": 0.8081061090676476
+    },
+    {
+      "class": "mel",
+      "support": 52,
+      "precision": 0.07333333333333333,
+      "recall_sensitivity": 0.21153846153846154,
+      "f1": 0.10891089108910891,
+      "specificity_ovr": 0.8723599632690542,
+      "roc_auc_ovr": 0.6142367733276825
+    },
+    {
+      "class": "nv",
+      "support": 244,
+      "precision": 0.5135135135135135,
+      "recall_sensitivity": 0.7786885245901639,
+      "f1": 0.6188925081433224,
+      "specificity_ovr": 0.7993311036789298,
+      "roc_auc_ovr": 0.8752832757643876
+    }
+  ],
+  "confusion_matrix": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      80,
+      281,
+      175,
+      8,
+      130,
+      152,
+      19
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      5,
+      5,
+      0,
+      11,
+      28,
+      2
+    ],
+    [
+      4,
+      9,
+      28,
+      0,
+      9,
+      190,
+      4
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "akiec",
+    "bcc",
+    "bkl",
+    "df",
+    "mel",
+    "nv",
+    "vasc"
+  ],
+  "evaluated_examples": 1141,
+  "external_dataset_audit": {
+    "dataset": "PAD-UFES-20",
+    "metadata_rows": 2298,
+    "usable_rows": 1141,
+    "unmapped_rows": 1157,
+    "unmapped_label_counts": {
+      "ACK": 730,
+      "SCC": 192,
+      "SEK": 235
+    },
+    "indexed_images": 2298,
+    "class_counts": {
+      "bcc": 845,
+      "mel": 52,
+      "nv": 244
+    },
+    "group_count": 720,
+    "image_root": ".\\data\\raw\\PAD_UFES_20\\PAD-UFES-20"
+  },
+  "checkpoint": ".\\results\\runs\\resnet50_frozen_seed42_20261112T153434Z\\checkpoints\\best.pt",
+  "evaluated_at_utc": "2026-11-12T17:36:24.238592+00:00"
+}

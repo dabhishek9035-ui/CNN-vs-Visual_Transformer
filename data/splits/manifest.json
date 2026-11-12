@@ -1,0 +1,65 @@
+{
+  "dataset": "HAM10000",
+  "seed": 42,
+  "group_column": "lesion_id",
+  "strategy": "nested StratifiedGroupKFold",
+  "test_folds": 7,
+  "validation_folds": 6,
+  "total_images": 10015,
+  "total_groups": 7470,
+  "source_class_counts": {
+    "akiec": 327,
+    "bcc": 514,
+    "bkl": 1099,
+    "df": 115,
+    "mel": 1113,
+    "nv": 6705,
+    "vasc": 142
+  },
+  "partitions": {
+    "train": {
+      "images": 7153,
+      "groups": 5336,
+      "fraction": 0.7142286570144782,
+      "class_counts": {
+        "akiec": 234,
+        "bcc": 367,
+        "bkl": 785,
+        "df": 81,
+        "mel": 795,
+        "nv": 4789,
+        "vasc": 102
+      }
+    },
+    "validation": {
+      "images": 1431,
+      "groups": 1067,
+      "fraction": 0.14288567149276085,
+      "class_counts": {
+        "akiec": 47,
+        "bcc": 73,
+        "bkl": 157,
+        "df": 17,
+        "mel": 159,
+        "nv": 958,
+        "vasc": 20
+      }
+    },
+    "test": {
+      "images": 1431,
+      "groups": 1067,
+      "fraction": 0.14288567149276085,
+      "class_counts": {
+        "akiec": 46,
+        "bcc": 74,
+        "bkl": 157,
+        "df": 17,
+        "mel": 159,
+        "nv": 958,
+        "vasc": 20
+      }
+    }
+  },
+  "group_overlap": false,
+  "note": "Group constraints make exact target fractions approximate; inspect counts before training."
+}

@@ -1,0 +1,6 @@
+{
+  "model": "resnet50",
+  "strategy": "finetune",
+  "seed": 42,
+  "deterministic_cudnn": false
+}

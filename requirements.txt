@@ -1,0 +1,10 @@
+# Install torch and torchvision as a compatible pair for the selected CUDA build.
+torch>=2.3,<3.0
+torchvision>=0.18,<1.0
+numpy>=1.26,<3.0
+pandas>=2.1,<4.0
+scikit-learn>=1.4,<2.0
+Pillow>=10.2,<13.0
+PyYAML>=6.0,<7.0
+matplotlib>=3.8,<4.0
+psutil>=5.9,<8.0

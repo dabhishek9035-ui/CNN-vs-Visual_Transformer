@@ -1,0 +1,47 @@
+# Python bytecode and local tooling
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Virtual environments and local secrets
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# Editors and operating-system files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Raw source datasets and downloaded archives
+/data/raw/
+*.zip
+
+# Model weights are large generated binaries
+*.pt
+*.pth
+*.ckpt
+**/checkpoints/
+
+# Earlier incomplete duplicate run; the final seed-42 run is retained
+/results/runs/resnet50_frozen_seed42_20261112T152215Z/
+
+# LaTeX intermediate files (the report PDF is retained)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
